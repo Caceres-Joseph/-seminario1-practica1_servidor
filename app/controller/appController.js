@@ -13,6 +13,11 @@ exports.list_all_tasks = function (req, res) {
 };
 
 
+exports.saludo = function (req, res) { 
+  res.send("hola");
+};
+
+
 exports.create_a_task = function (req, res) {
   console.log(req.body);
   var new_task = new Task(req.body);
