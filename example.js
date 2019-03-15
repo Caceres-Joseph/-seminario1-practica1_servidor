@@ -9,10 +9,10 @@ var cors = require('cors');
 const mysql = require('mysql');
 // connection configurations
 var mc = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'JhosefCaceres',
-    database: 'seminario1'
+    host: 'tutorial-db-instance.cricycwjc8nr.us-east-2.rds.amazonaws.com',
+    user     : 'tutorial_user',
+    password : 'tutorial_user',
+    database : 'seminario1'
 });
 
 // subir imagen
